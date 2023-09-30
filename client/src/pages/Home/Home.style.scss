@@ -1,11 +1,13 @@
 .home-page {
   &__title {
     color: red;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
   }
 
   &__products {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px 
 
     a {
       text-decoration: none;

@@ -1,14 +1,22 @@
 .product-preview-card {
   &__title {
-    font-style: bold;
-    color: green;
+    font-family: monospace;
+    font-style: normal;
+    color: red;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
   }
 
   &__description {
-    color: blue;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    color: green;
+    justify-content: center;
+    align-items: center;
   }
 
   &__image {
-    width: 10rem;
+    width: 15rem;
   }
 }

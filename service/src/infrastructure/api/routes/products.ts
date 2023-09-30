@@ -63,5 +63,5 @@ const createProduct = async (request: Request, response: Response) => {
 router.get("/", getProducts);
 router.get("/:id", getProduct);
 router.post("/", createProduct);
-
+router.put("/products/:id",);
 export default router;
