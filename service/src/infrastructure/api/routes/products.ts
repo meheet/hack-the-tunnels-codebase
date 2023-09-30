@@ -60,8 +60,38 @@ const createProduct = async (request: Request, response: Response) => {
   });
 };
 
+/*
+const updateProduct = async (request: Request, response: Response) => {
+  const authorization = await verifyAuthorization(
+    request.headers.authorization,
+  );
+
+  if (authorization.err) {
+    return error(response, {
+      error: authorization.val.message,
+      statusCode: 401,
+    });
+  }
+
+  const product = await ProductService.update(
+    request.body.title,
+    request.body.description,
+    request.body.price,
+  );
+
+  return success(response, {
+    data: {
+      product: product,
+    },
+    statusCode: 201,
+  });
+};
+*/
+
+
+
 router.get("/", getProducts);
 router.get("/:id", getProduct);
 router.post("/", createProduct);
-router.put("/products/:id",);
+//router.put("/products/:id",updateProduct);//
 export default router;
