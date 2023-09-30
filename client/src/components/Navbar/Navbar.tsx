@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-      <img src="" height={30} width={30} alt="Logo">
+      <img src="" height={30} width={30} alt="Logo"/>
         <Link to="/">Store Logo</Link>
       </div>
       <div className="navbar__account">
