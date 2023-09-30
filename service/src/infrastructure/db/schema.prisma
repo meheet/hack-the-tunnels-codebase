@@ -18,6 +18,7 @@ model Product {
   imageUrl    String?
   lineItems   LineItem[]
   deleted     Boolean   @default(false)
+  reviews     reviews[] 
 }
 
 model Order {
@@ -51,4 +52,11 @@ model Account {
   role      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model reviews {
+  id       Int       @id @default(autoincrement())
+  textId   Int
+  rating   Int
+  product  Product[]
 }
