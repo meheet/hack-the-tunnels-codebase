@@ -37,5 +37,30 @@ export const create = async (
     },
   });
 
-  return newProduct;
+  return newProduct; 
 };
+  /*
+  export const update = async (
+    title: string,
+    description: string,
+    price: number,
+    imageUrl: string = "https://i.imgur.com/EyoQOjC.jpg",
+  ): Promise<Product> => {
+    const updateProduct = await prisma.product.update({
+      where: { id: number,},
+      data: { 
+        
+        title: title,
+        description: description,
+        price: price,
+        imageUrl: imageUrl,
+        
+      },
+      
+    });
+    return updateProduct; 
+   
+
+  
+};
+*/
